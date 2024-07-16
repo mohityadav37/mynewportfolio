@@ -1,0 +1,383 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+     line-height: 1.5;
+     font-size: 16px;
+     box-sizing: border-box;
+}
+::before,::after{
+    box-sizing: border-box;
+}
+/* First Section Start */
+section{
+    display: block; 
+    min-height: 100vh;
+    padding: 0 30px;
+    background-color: var(--bg-black-900);
+    opacity: 1;
+     
+}
+.main-container{
+    padding-left: 260px;
+}
+
+
+.main-container{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+
+} 
+/*Aside Content Start */
+.aside-content{
+    height: 100%;
+    position: fixed;
+    padding: 30px;
+    width: 260px;
+    border-right: 1px solid var(--bg-black-50);
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.aside-content .logo a{
+    font-size: 30px;
+    padding: 20px 15px;
+    color: var(--text-black-900);
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+ul{
+    list-style: none;
+}
+
+.aside-content .logo{
+    top: 50px;
+    position: absolute;
+    font-size: 30px;
+    text-transform:capitalize ;
+}
+.nav li{
+    gap: 80px ;
+}
+
+.logo a::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0px;
+
+}
+.logo a::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0px;
+
+}
+
+.logo a span{
+    font-family: 'Clicker Script';
+    font-weight: 900;
+}
+.aside-content .nav{
+    margin-top: 50px;
+}
+
+.aside-content .nav li a{
+    margin-bottom:15px ;
+    font-family: "montserrat";
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+    display: block;
+    padding: 10px 15px;
+
+}
+.aside-content .nav li a.active{
+    color: var( --skin-color );
+}
+
+
+/* Aside Content End */
+
+/* Hero section Start */
+.home {
+    height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+}
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+
+    
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    position: relative;
+}
+
+.information{
+    flex: 0 0 60%;
+    max-width: 60%;
+    
+}
+
+h3.hello{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'montserrat';
+
+}
+
+h3.hello span{
+    font-family: "Montserrat",'';
+    color: var(--skin-color);
+    font-weight: 700;
+}
+
+h3.myprofession{
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'montserrat';
+}
+
+.typing{
+    color: var(--skin-color);
+}
+  
+.information p{
+    font-size: 1.04rem;
+    letter-spacing: 0.5px;
+    font-family: 'montserrat';
+    margin-bottom: 30px;
+
+}
+
+.btn{
+    color: var(--bg-black-900);
+    font-family: 'montserrat';
+    padding: 9px 29px;
+    background-color: var( --skin-color);
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 30px;
+    white-space: nowrap;
+    transition: all 0.9s ease;
+}
+
+ .btn:hover{
+    transform: scale(1.07);
+}
+.home-img{
+   flex: 0 0 40%;
+   max-width: 40%;
+   text-align: center;
+
+}
+.home-img::after{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 14px solid var(--skin-color);
+    border-right: 14px solid var(--skin-color);
+    right: 50px;
+    bottom: -26px;
+    
+}
+
+.home-img::before{ 
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 14px solid var(--skin-color);
+    border-left: 14px solid var(--skin-color);
+    left: 40.5rem;
+    top: -32px;
+    
+}
+
+.home-img img{
+    width: 60%;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Hero section End */
+
+.section-title{
+    font-size: 22px;
+    color: var(--text-black-900);
+    font-family: 'montserrat';
+    margin-bottom: 50px;
+}
+
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 39px;
+    background-color: var(--skin-color);
+    left:18rem;
+    top: 100%;
+    margin-top: 42px;
+
+}
+
+.section-title h2::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 29px;
+    background-color: var(--skin-color);
+    left:18rem;
+    top: 100%;
+    margin-top: 52px;
+
+}
+
+ .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+
+.about-content .about-text h3{
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    font-family: 'montserrat';
+    margin-bottom: 15px;
+}
+
+.about-content .about-text h3 span{
+    color: var(--skin-color);
+}
+
+.about-content .about-text p{
+    width: 70%;
+    font-family: 'montserrat';
+    margin-bottom: 10px;
+    color: var(--text-black-900);
+}
+
+.about-content .myinfo{
+    display: flex;
+    width: 100%;
+}
+ .personal-info{
+    display: flex;
+    width: 57%;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.personal-info .info-item{
+    display: flex;
+
+}
+
+.personal-info .info-item p{
+    color: var(--text-black-900);
+    font-weight: 600;
+    font-family: 'montserrat';
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--bg-black-50);
+    font-size: 16px;
+}
+.personal-info .info-item span{
+    color: var(--text-black-700);
+
+}
+.personal-info .button{
+    margin-top: 20px;
+}
+
+
+ .skills{
+    width: 40%;
+    margin-top: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border-left: 1px solid var(--bg-black-50);
+
+}
+
+.skill-item{
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.skill-item h3{
+    font-size: 17px;
+    font-family: 'montserrat';
+    color: var(--text-black-900);
+    text-transform: uppercase;
+
+}
+
+.percentage{
+    font-weight: 700;
+    font-family: 'montserrat';
+    color: var(--text-black-700);
+}
+
+.progress{
+    width: 100%;
+    height: 6px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: var(--bg-black-50);
+}
+
+.progress-in{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
