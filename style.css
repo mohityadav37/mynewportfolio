@@ -27,7 +27,7 @@ body{
 /* First Section Start */
 section{
     display: block; 
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 0 30px;
     background-color: var(--bg-black-900);
     opacity: 1;
@@ -247,6 +247,8 @@ h3.myprofession{
 
 /* Hero section End */
 
+/* About Content Start */
+
 .section-title{
     font-size: 22px;
     color: var(--text-black-900);
@@ -276,6 +278,10 @@ h3.myprofession{
     top: 100%;
     margin-top: 52px;
 
+}
+
+.shadow-dark{
+    box-shadow: 0 0 20px  rgba(48, 46, 77, 0.15);
 }
 
  .about-content{
@@ -369,7 +375,7 @@ h3.myprofession{
 .progress{
     width: 100%;
     height: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border-radius: 4px;
     background-color: var(--bg-black-50);
 }
@@ -381,3 +387,111 @@ h3.myprofession{
     border-radius: 4px;
     background-color: var(--skin-color);
 }
+
+/* About Content End */
+
+/* EducationInfo Section Start */
+
+.educationinfo .row{
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+
+}
+
+.educationinfo h2{
+    font-size: 22px;
+    color: var(--text-black-900);
+    font-family: 'montserrat';
+    margin-bottom: 40px;
+
+}
+.timeline-box{
+    width: 100%;
+}
+
+.timeline{
+    width: 100%;
+    background-color: var(--bg-black-100);
+    padding: 30px 20px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 20px  rgba(48, 46, 77, 0.15);
+    
+}
+
+.timeline .timeline-item{
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+.timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+
+.timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 3px;
+    background-color: var(--skin-color);
+}
+
+.timeline .timeline-item .circle-dots{
+    position: absolute;
+    left: 0;
+    top: 3px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.timeline .timeline-item .timeline-date{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'montserrat';
+    margin-bottom: 9px;
+    color: var(--text-black-700);
+}
+
+.timeline .timeline-item h4{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'montserrat';
+    color: var(--text-black-900);
+    margin-bottom: 5px;
+
+}
+
+.education{
+    width:50%;
+}
+
+
+ 
+.experience{
+    width: 50%;
+    padding-left: 30px;
+
+}
+/* About Content End */
+
+/* Service Section Start */
+
+.service .container .section-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 39px;
+    background-color: var(--skin-color);
+    left:18rem;
+    top: 100%;
+    margin-top: 42px;
+
+}
+
+
+
