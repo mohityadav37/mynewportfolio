@@ -20,6 +20,7 @@ body{
      line-height: 1.5;
      font-size: 16px;
      box-sizing: border-box;
+     font-family: 'montserrat';
 }
 ::before,::after{
     box-sizing: border-box;
@@ -469,13 +470,14 @@ h3.myprofession{
 
 .education{
     width:50%;
+    margin-right: 40px;
 }
 
 
  
 .experience{
     width: 50%;
-    padding-left: 30px;
+    
 
 }
 /* About Content End */
@@ -486,11 +488,13 @@ h3.myprofession{
 
 .service-items{
     width: 100%;
-    background-color: var(--text-black-900);
+    background-color: var(--bg-black-500);
 }
 
 .service-items .service-box{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-box2{
@@ -498,11 +502,32 @@ h3.myprofession{
 }
 .box{
     display: flex;
+    flex-direction: column;
     width: 30%;
-    margin: 10PX 20PX;
-    background-color: RED;
+    margin: 10PX 15PX;
+    border-radius: 10px;
+    border: 1px solid var(--bg-black-50);
+    background-color: var(--bg-black-100);
     justify-content: center;
     align-items: center;
+
 }
 
+.service-box .box i{
+    padding: 10px;
+    font-size: 20px;
+}
 
+.service-box .box h3{
+    font-size: 25px;
+    color: var(--text-black-900);
+    padding:10px ;
+
+}
+
+.service-box .box p{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+
+}
