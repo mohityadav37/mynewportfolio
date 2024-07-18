@@ -254,6 +254,7 @@ h3.myprofession{
     color: var(--text-black-900);
     font-family: 'montserrat';
     margin-bottom: 50px;
+    position: relative;
 }
 
 .section-title h2::after{
@@ -262,8 +263,8 @@ h3.myprofession{
     height: 4px;
     width: 39px;
     background-color: var(--skin-color);
-    left:18rem;
-    top: 100%;
+    left:1px;
+    top: 10%;
     margin-top: 42px;
 
 }
@@ -274,8 +275,8 @@ h3.myprofession{
     height: 4px;
     width: 29px;
     background-color: var(--skin-color);
-    left:18rem;
-    top: 100%;
+    left:1px;
+    top: 10%;
     margin-top: 52px;
 
 }
@@ -481,17 +482,27 @@ h3.myprofession{
 
 /* Service Section Start */
 
-.service .container .section-title::after{
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 39px;
-    background-color: var(--skin-color);
-    left:18rem;
-    top: 100%;
-    margin-top: 42px;
 
+
+.service-items{
+    width: 100%;
+    background-color: var(--text-black-900);
 }
 
+.service-items .service-box{
+    display: flex;
+}
+
+.service-box2{
+    display: flex;
+}
+.box{
+    display: flex;
+    width: 30%;
+    margin: 10PX 20PX;
+    background-color: RED;
+    justify-content: center;
+    align-items: center;
+}
 
 
