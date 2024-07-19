@@ -593,6 +593,7 @@ margin: 10px;
     object-fit: cover;
     border-radius: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .project-items .project img:hover{
