@@ -489,6 +489,7 @@ h3.myprofession{
 .service-items{
     width: 100%;
     background-color: var(--bg-black-500);
+    padding-bottom: 20px ;
 }
 
 .service-items .service-box{
@@ -513,7 +514,43 @@ h3.myprofession{
 
 }
 
-.service-box .box i{
+.box:hover{
+    box-shadow: 0 0 20px  rgba(48, 46, 77, 0.15);
+}
+
+.box .icon{
+    display: flex;
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+}
+
+ .box:hover .icon{
+    background-color: var(--skin-color);
+}
+
+.box:hover .icon i{
+    font-size: 30px;
+    color: var(--bg-black-50);
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+
+}
+
+.box .icon i{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--skin-color);
+    
+}
+.service-box .box {
     padding: 10px;
     font-size: 20px;
 }
@@ -531,3 +568,36 @@ h3.myprofession{
     padding: 10px;
 
 }
+
+/* Service Section End */
+
+/* Portfolio Section Start */
+
+.project-items{
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    
+}
+
+.project-items .project{
+    width: 30%;
+    height: 30vh;
+margin: 10px;
+}
+
+.project-items .project img{
+    width: 100%;
+    height: 30vh;
+    object-position: center center;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.project-items .project img:hover{
+    transform: scale(1.07);
+}
+
+/* Portfolio Section End */
+
