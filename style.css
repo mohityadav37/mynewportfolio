@@ -137,6 +137,8 @@ ul{
     height: 100vh;
     display: flex;
     color: var(--text-black-900);
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
@@ -157,11 +159,12 @@ ul{
 .information{
     flex: 0 0 60%;
     max-width: 60%;
+
     
 }
 
-h3.hello{
-    padding-top: 40px;
+h4.hello{
+    padding-top: 50px;
     padding-bottom: 10px;
     font-size: 2rem;
     font-weight: 700;
@@ -169,15 +172,15 @@ h3.hello{
 
 }
 
-h3.hello span{
+h4.hello span{
     font-family: "Montserrat",'';
     color: var(--skin-color);
     font-weight: 700;
 }
 
-h3.myprofession{
-    margin-bottom: 10px;
-    font-size: 1.7rem;
+h4.myprofession{
+    margin-bottom: 20px;
+    font-size: 1.8rem;
     font-weight: 700;
     font-family: 'montserrat';
 }
@@ -292,7 +295,7 @@ h3.myprofession{
     
 }
 
-.about-content .about-text h3{
+.about-content .about-text h4{
     font-size: 26px;
     font-weight: 700;
     color: var(--text-black-900);
@@ -300,7 +303,7 @@ h3.myprofession{
     margin-bottom: 15px;
 }
 
-.about-content .about-text h3 span{
+.about-content .about-text h4 span{
     color: var(--skin-color);
 }
 
@@ -360,7 +363,7 @@ h3.myprofession{
     justify-content: space-between;
 }
 
-.skill-item h3{
+.skill-item h4{
     font-size: 17px;
     font-family: 'montserrat';
     color: var(--text-black-900);
@@ -536,7 +539,7 @@ h3.myprofession{
 
 .box:hover .icon i{
     font-size: 30px;
-    color: var(--bg-black-50);
+    color: #ffff;
     font-weight: 500;
     transition: all 0.3s ease;
 
@@ -578,12 +581,19 @@ h3.myprofession{
     width: 100%;
     padding-left: 15px;
     
+    
 }
 
+.project-items.box2{
+    padding-bottom: 20px;
+
+}
 .project-items .project{
     width: 30%;
     height: 30vh;
-margin: 10px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .project-items .project img{
@@ -592,13 +602,130 @@ margin: 10px;
     object-position: center center;
     object-fit: cover;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.9s ease;
     cursor: pointer;
 }
 
 .project-items .project img:hover{
-    transform: scale(1.07);
+    transform: scale(1.09);
 }
 
 /* Portfolio Section End */
+
+/* Contact section Start */
+
+.contact-info{
+    width: 100%;
+    display: flex;
+}
+
+.contact-form{
+    width: 50%;
+    margin: 10PX;
+}
+
+.form-items{
+    width: 90%;
+    display: flex;
+    margin: 20px;
+
+}
+
+.form-items .btn{
+    border: none;
+    cursor: pointer;
+}
+
+.form-control{
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 10PX;
+    margin-top: 10PX;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+}
+.form-control:focus{
+   box-shadow:0 0 20px  rgba(48, 46, 77, 0.15);
+   outline: none;
+
+}
+.icon-box{
+    width: 100%;
+    height: 10vh;
+    margin-top: 10px;
+    margin-left: 15px;
+    transition: all 0.9s ease;
+}
+.icon-box i {
+    font-size: 20px;
+    padding:  10px;
+    margin: 15px;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    color: #fff;
+
+}
+
+.icon-box .icon:hover{
+    transform: scale(1.07);
+
+}
+
+.contact-title h3{
+    font-size: 25px;
+    color: var(--skin-color);
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-sub-title h4{
+    font-size: 15px;
+    color: var(--text-black-900);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-items{
+    width: 50%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.Contact-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-right: 1px solid var(--bg-black-50);
+
+}
+
+.Contact-box i{
+    padding: 15px;
+    font-size: 30px;
+    color: var(--skin-color);
+}
+.Contact-box h4{
+    font-size: 20px;
+    color: var(--text-black-900);
+
+}
+
+.Contact-box p{
+    
+    font-size: 15px;
+
+}
+
+
+
+
+/* Contact section End */
 
